@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Akash S — student portfolio and web development skills.">
+  <title>Akash S | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home">AKASH<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch color theme" title="Switch theme">☾</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> STUDENT • ASPIRING DEVELOPER</p>
+        <h1>Hi, I'm <span>Akash S.</span></h1>
+        <h2>I build things for the web.</h2>
+        <p class="intro">I'm a student exploring web development and programming. I enjoy learning new technologies and turning ideas into simple, useful digital experiences.</p>
+        <div class="hero-actions"><a class="button primary" href="#projects">Explore my work <span>↗</span></a><a class="button secondary" href="#contact">Get in touch</a></div>
+        <div class="social-note"><span class="line"></span> Curious mind. Continuous learner.</div>
+      </div>
+      <div class="portrait-wrap">
+        <div class="portrait-backdrop"></div>
+        <img class="portrait" src="akash-profile.jpg" alt="Portrait of Akash S">
+        <div class="portrait-label"><span class="label-icon">✦</span><div><strong>Akash S</strong><small>Student Developer</small></div></div>
+        <div class="floating-tag">JS <span>✳</span> Python</div>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About section">↓ <span>SCROLL TO DISCOVER</span></a>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading"><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Building my skills,<br><span>one project at a time.</span></h2></div>
+      <div class="about-grid"><p class="about-lead">I'm Akash, a student and aspiring developer who loves exploring how technology can solve everyday problems.</p><div class="about-detail"><p>I'm developing my programming skills in JavaScript and Python, and building a strong foundation through practice and projects. My goal is to keep learning, collaborate with others, and create thoughtful digital experiences.</p><p class="muted">Currently learning • Practising • Growing</p></div></div>
+    </section>
+
+    <section class="section skills-section" id="skills"><div class="container">
+      <div class="section-heading"><p class="eyebrow">WHAT I WORK WITH</p><h2>My <span>skills.</span></h2><p class="section-subtitle">Technologies I'm learning and improving every day.</p></div>
+      <div class="skill-grid">
+        <article class="skill-card"><div class="skill-symbol">JS</div><h3>JavaScript</h3><p>Learning interactive web experiences, programming logic, and DOM manipulation.</p><div class="skill-track"><span style="width:72%"></span></div><small>Web programming</small></article>
+        <article class="skill-card"><div class="skill-symbol python">Py</div><h3>Python</h3><p>Practising programming fundamentals, problem solving, and writing readable code.</p><div class="skill-track"><span style="width:68%"></span></div><small>Programming</small></article>
+        <article class="skill-card"><div class="skill-symbol html-symbol">&lt;/&gt;</div><h3>HTML &amp; CSS</h3><p>Using page structure and styling to build responsive layouts for the web.</p><div class="skill-track"><span style="width:65%"></span></div><small>Web foundations</small></article>
+      </div>
+      <p class="skills-note">Skill bars are illustrative and represent my learning journey, not formal test scores.</p>
+    </div></section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading"><p class="eyebrow">SELECTED PRACTICE WORK</p><h2>Projects in <span>progress.</span></h2><p class="section-subtitle">Sample projects to showcase the skills I'm developing. Replace these with your own completed work as you build it.</p></div>
+      <div class="filter-row" role="group" aria-label="Filter projects"><button class="filter-btn selected" data-filter="all">All projects</button><button class="filter-btn" data-filter="web">Web</button><button class="filter-btn" data-filter="python">Python</button></div>
+      <div class="project-grid">
+        <article class="project-card" data-category="web"><div class="project-art art-one"><span class="art-number">01</span><div class="browser-mock"><div class="browser-dots">● ● ●</div><div class="mock-line wide"></div><div class="mock-line"></div><div class="mock-blocks"><i></i><i></i><i></i></div></div></div><div class="project-info"><p class="project-type">WEB DEVELOPMENT</p><h3>Personal Portfolio</h3><p>A responsive personal website to introduce my skills, interests, and practice work.</p><div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><button class="details-btn" aria-expanded="false">Learning notes <span>＋</span></button><p class="project-extra" hidden>Practice focus: responsive layouts, accessible navigation, theme switching, and JavaScript interactions.</p></div></article>
+        <article class="project-card" data-category="python"><div class="project-art art-two"><span class="art-number">02</span><div class="code-art"><span>def</span> solve():<br>&nbsp;&nbsp;learn()<br>&nbsp;&nbsp;build()<br>&nbsp;&nbsp;<b>return</b> growth</div></div><div class="project-info"><p class="project-type">PYTHON PRACTICE</p><h3>Problem-Solving Collection</h3><p>A collection of small Python exercises for practising logic and programming fundamentals.</p><div class="tag-row"><span>Python</span><span>Logic</span></div><button class="details-btn" aria-expanded="false">Learning notes <span>＋</span></button><p class="project-extra" hidden>Practice focus: variables, conditions, loops, functions, and clear step-by-step solutions.</p></div></article>
+        <article class="project-card" data-category="web"><div class="project-art art-three"><span class="art-number">03</span><div class="todo-art"><div class="todo-title">Daily focus <span>✦</span></div><p>✓ Learn something</p><p>○ Practise coding</p><p>○ Build a project</p></div></div><div class="project-info"><p class="project-type">JAVASCRIPT PRACTICE</p><h3>Daily Task Planner</h3><p>A concept for a simple task list that helps organise everyday learning goals.</p><div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><button class="details-btn" aria-expanded="false">Learning notes <span>＋</span></button><p class="project-extra" hidden>Practice focus: handling button clicks, updating the page dynamically, and organising user input.</p></div></article>
+      </div>
+      <p class="project-disclaimer">These are portfolio sample concepts, not claims of published projects. Add working demo or repository links when available.</p>
+    </section>
+
+    <section class="contact-section" id="contact"><div class="container contact-inner"><div><p class="eyebrow">LET'S CONNECT</p><h2>Have an idea?<br><span>Let's talk.</span></h2><p class="contact-copy">I'm open to learning opportunities, collaboration, and connecting with fellow tech enthusiasts.</p></div><div class="contact-card"><p class="contact-label">EMAIL ME</p><a class="email-link" href="mailto:25bcs203@kgcas.com">25bcs203@kgcas.com ↗</a><div class="contact-divider"></div><p class="contact-label">CALL / WHATSAPP</p><a class="phone-link" href="tel:+919629517968">+91 96295 17968 ↗</a><button class="copy-email" id="copyEmail">Copy email address</button><p id="copyMessage" class="copy-message" aria-live="polite"></p></div></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><a class="logo" href="#home">AKASH<span>.</span></a><p>Designed &amp; built by Akash S</p><p>© <span id="year"></span> Akash S. Keep learning.</p><a href="#home" class="back-top">Back to top ↑</a></div></footer>
+</body>
+</html>
